@@ -11,10 +11,10 @@ export default function ToggleMode () {
   })
 
   if (darkMode) {
-    localStorage.removeItem('PassGenDarkMode')
+    localStorage.setItem('PassGenDarkMode', true)
     body.classList.replace('light', 'dark')
   } else {
-    localStorage.setItem('PassGenDarkMode', true)
+    localStorage.removeItem('PassGenDarkMode')
     body.classList.replace('dark', 'light')
   }
 
