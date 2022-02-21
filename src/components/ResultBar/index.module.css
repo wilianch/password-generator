@@ -9,17 +9,17 @@
 
 .result_icon {
   position: absolute;
-  width: 1.8rem;
+  width: 2.2rem;
   top: 50%;
-  left: .6rem;
+  right: .6rem;
   transform: translateY(-50%);
-  stroke: var(--color-text);
+  stroke: var(--color-primary-alt);
 }
 
 .result_input {
   display: block; 
   width: 100%;
-  padding: 1.4rem 0 1.4rem 3rem;
+  padding: 1.4rem 3rem 1.4rem 1rem;
   cursor: pointer;
   font-size: var(--font-text);
   border: none;

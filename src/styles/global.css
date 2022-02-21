@@ -25,26 +25,26 @@
 }
 
 :root {
-  --font-family: 'Recursive';
+  --font-family:    'Recursive';
   --border-content: .3rem;
-  --font-text: 1rem;
-  --font-title: 1.62rem;
+  --font-text:      1rem;
+  --font-title:     1.4rem;
 }
 
 .light {
-  --color-primary: #f0f0f0;
-  --color-primary-light: #ffffff;
-  --color-primary-alt: #9D84B7;
-  --color-disabled: #a1a1a1;
-  --color-text: #40394A;
+  --color-primary:       hsl(0, 0%, 94%);
+  --color-primary-light: hsl(0, 0%, 100%);
+  --color-primary-alt:   hsl(269, 26%, 62%);
+  --color-disabled:      hsl(0, 0%, 63%);
+  --color-text:          hsl(265, 13%, 26%);
 }
 
 .dark {
-  --color-primary: #424242;
-  --color-primary-light: #555555;
-  --color-primary-alt: #9D84B7;
-  --color-disabled: #a1a1a1;
-  --color-text: #ffffff;
+  --color-primary:       hsl(0, 0%, 26%);
+  --color-primary-light: hsl(0, 0%, 33%);
+  --color-primary-alt:   hsl(269, 26%, 62%);
+  --color-disabled:      hsl(0, 0%, 63%);
+  --color-text:          hsl(0, 0%, 100%);
 }
 
 * {
@@ -66,6 +66,6 @@ body {
 .main_content {
   display: grid;
   width: 90%;
-  max-width: 760px;
+  max-width: 820px;
   row-gap: 1.6rem;
 }
