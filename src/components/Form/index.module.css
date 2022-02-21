@@ -1,0 +1,124 @@
+.form {
+  display: grid;
+  row-gap: 1.6rem;
+  position: relative;
+  background-color: var(--color-primary-light);
+  padding: 1rem;
+  border-radius: var(--border-content);
+}
+
+.form_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.number {
+  display: flex;
+  column-gap: 1rem;
+  align-items: center;
+  font-size: var(--font-text);
+  color: var(--color-text);
+}
+
+.number_input {
+  appearance: none;
+  border: none;
+  font-size: var(--font-text);
+  border-radius: var(--border-content);
+  padding: .9rem 1rem;
+  color: var(--color-text);
+  background-color: var(--color-primary);
+}
+
+.number_input::-webkit-outer-spin-button,
+.number_input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.form_submit {
+  border: none;
+  font-size: var(--font-text);
+  cursor: pointer;
+  color: #ffffff;
+  background-color: var(--color-primary-alt);
+  border-radius: var(--border-content);
+  padding: .9rem 1rem;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1.4rem;
+}
+
+@media screen and (max-width: 540px) {
+  .options {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1.4rem;
+  }  
+}
+
+.options_item {
+  position: relative;
+}
+
+.options_check {
+  position: absolute;
+  appearance: none;
+  width: 1.4rem;
+  height: 1.4rem;
+  background-color: transparent;
+  border-radius: 50%;
+  border: solid 2px var(--color-disabled);
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.options_check:checked {
+  border: solid 2px var(--color-primary-alt);
+}
+
+.options_check::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 82%;
+  height: 82%;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+}
+
+.options_check:checked::after {
+  background-color: var(--color-primary-alt);
+}
+
+.options_name {
+  display: flex;
+  background-color: var(--color-primary);
+  cursor: pointer;
+  padding: 3.2rem 1rem 1rem 1rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-content);
+  color: var(--color-disabled);
+}
+
+.options_check:checked + .options_name {
+  color: var(--color-text);
+}
+
+.form_separator {
+  border-left: solid .2rem var(--color-primary-alt);
+  display: block;
+  color: var(--color-text);
+  position: relative;
+  padding-left: 1rem;
+  font-style: italic;
+  padding: .8rem;
+}

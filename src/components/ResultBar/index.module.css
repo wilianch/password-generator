@@ -1,0 +1,35 @@
+.result {
+  display: flex;
+  border-radius: var(--border-content);
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  background-color: var(--color-primary-light);
+}
+
+.result_icon {
+  position: absolute;
+  width: 1.8rem;
+  top: 50%;
+  left: .6rem;
+  transform: translateY(-50%);
+  stroke: var(--color-text);
+}
+
+.result_input {
+  display: block; 
+  width: 100%;
+  padding: 1.4rem 0 1.4rem 3rem;
+  cursor: pointer;
+  font-size: var(--font-text);
+  border: none;
+}
+
+.result_input:disabled {
+  background-color: transparent;
+  color: var(--color-text);
+}
+
+.result_input::placeholder {
+  color: var(--color-disabled);
+}

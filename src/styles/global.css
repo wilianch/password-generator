@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'Recursive';
+  src: url('../assets/fonts/Recursive-Regular.woff2') format('woff2');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+*,
+*:hover,
+*:focus,
+*:active {
+  outline: none;
+  box-shadow: none;
+}
+
+:root {
+  --font-family: 'Recursive';
+  --border-content: .3rem;
+  --font-text: 1rem;
+  --font-title: 1.62rem;
+}
+
+.light {
+  --color-primary: #f0f0f0;
+  --color-primary-light: #ffffff;
+  --color-primary-alt: #9D84B7;
+  --color-disabled: #a1a1a1;
+  --color-text: #40394A;
+}
+
+.dark {
+  --color-primary: #424242;
+  --color-primary-light: #555555;
+  --color-primary-alt: #9D84B7;
+  --color-disabled: #a1a1a1;
+  --color-text: #ffffff;
+}
+
+* {
+  font-family: var(--font-family);
+}
+
+body {
+  background-color: var(--color-primary);
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main_content {
+  display: grid;
+  width: 90%;
+  max-width: 760px;
+  row-gap: 1.6rem;
+}
