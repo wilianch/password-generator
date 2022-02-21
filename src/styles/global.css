@@ -61,11 +61,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .main_content {
   display: grid;
   width: 90%;
-  max-width: 820px;
+  max-width: 830px;
   row-gap: 1.6rem;
 }
