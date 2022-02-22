@@ -11,10 +11,6 @@
   border-radius: var(--border-content);
   left: 50%;
   transform: translateX(-50%);
-  opacity: 0;
-}
-
-.popup_animate {
   animation: 1s view_poput ease;
 }
 
@@ -38,11 +34,11 @@
   height: 1.6rem;
   border-radius: 50%;
   padding: .1rem;
-  background-color: #b9ecce;
+  background-color: #bcf0d2;
 }
 
 .popup_icon_svg {
   width: 100%;
   display: block;
-  fill: #58aa7a;
+  fill: #40a76b;
 }

@@ -16,7 +16,7 @@ export default function ResultBar () {
 
   return (
     <>
-      { view && <Popup view={view} /> }
+      { view && <Popup /> }
       <section onClick={copy} className={styles.result}>
         <input
           className={styles.result_input}

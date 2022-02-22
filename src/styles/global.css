@@ -28,21 +28,21 @@
   --font-family:    'Recursive';
   --border-content: .3rem;
   --font-text:      1rem;
-  --font-title:     1.4rem;
+  --font-title:     1.36rem;
 }
 
 .light {
-  --color-primary:       hsl(0, 0%, 94%);
-  --color-primary-light: hsl(0, 0%, 100%);
-  --color-primary-alt:   hsl(269, 26%, 62%);
-  --color-disabled:      hsl(0, 0%, 63%);
+  --color-primary:       hsl(210, 44%, 92%);
+  --color-primary-light: hsl(0, 0%, 98%);
+  --color-primary-alt:   hsl(216, 24%, 56%);
+  --color-disabled:      hsl(0, 0%, 58%);
   --color-text:          hsl(265, 13%, 26%);
 }
 
 .dark {
-  --color-primary:       hsl(0, 0%, 26%);
-  --color-primary-light: hsl(0, 0%, 33%);
-  --color-primary-alt:   hsl(269, 26%, 62%);
+  --color-primary:       hsl(0, 0%, 16%);
+  --color-primary-light: hsl(0, 0%, 22%); 
+  --color-primary-alt:   hsl(216, 24%, 56%);
   --color-disabled:      hsl(0, 0%, 63%);
   --color-text:          hsl(0, 0%, 100%);
 }
@@ -53,6 +53,7 @@
 
 body {
   background-color: var(--color-primary);
+  /* background-image: radial-gradient(#FFDD94, #FA897B); */
 }
 
 .main {
@@ -68,5 +69,5 @@ body {
   display: grid;
   width: 90%;
   max-width: 830px;
-  row-gap: 1.6rem;
+  row-gap: 2rem;
 }
